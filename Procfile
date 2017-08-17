@@ -1,0 +1,1 @@
+web: gunicorn curriculum.wsgi --log-file -
