@@ -1,0 +1,41 @@
+{% extends "baseAdmin.html" %}
+
+{% block content %}
+  <body class="login">
+    <div>
+      <a class="hiddenanchor" id="signup"></a>
+      <a class="hiddenanchor" id="signin"></a>
+
+      <div class="login_wrapper">
+        <div class="animate form login_form">
+          <section class="login_content">
+            <form>
+              <h1>Inicio de Sesion</h1>
+              <div>
+                <input type="text" class="form-control" placeholder="Usuario" required="" />
+              </div>
+              <div>
+                <input type="password" class="form-control" placeholder="Contraseña" required="" />
+              </div>
+              <div>
+                <a class="btn btn-default submit" href="index.html">Iniciar Sesion</a>
+              </div>
+              <div class="clearfix"></div>
+              <div class="separator">
+                <div class="clearfix"></div>
+                <br />
+                <div>
+                  <h1><i class="fa fa-paw"></i> Gentelella Alela!</h1>
+                  <p>©2016 All Rights Reserved. </p>
+                  <p>Gentelella Alela! is a Bootstrap 3 template.</p>
+                  <p>Privacy and Terms</p>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+{% endblock %}
+

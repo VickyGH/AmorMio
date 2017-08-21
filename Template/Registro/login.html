@@ -1,0 +1,30 @@
+{% extends "baseAdmin.html" %}
+
+{% block content %}
+<div class="login">
+    <br>
+    <div class="login_wrapper">
+        <div  class="animate form login_form" >
+            <div class="login-panel panel panel-default">
+                <div class="panel-heading">
+                    <h1>Inicio de Sesion</h1>
+                </div>
+                <div class="panel-body">
+                    <form role="form" method="post" id='form_login'>
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label >Usuario:</label>
+                            <input type="text"  class="form-control" placeholder="Usuario" {{ form.username }}/>
+                        </div>
+                        <div class="form-group">
+                            <label>Contraseña:</label>
+                            <input type="password" class="form-control" placeholder="Contraseña" {{ form.password }}/>
+                        </div>
+                        <button class="btn btn-lg btn-success btn-block" type="submit" name="login">Iniciar Sesion</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

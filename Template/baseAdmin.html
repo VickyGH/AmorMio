@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es-Mx">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %} {% endblock %}</title>
+    <!-- Llamar a los estaticos-->
+    {% load staticfiles %}
+    <!-- Bootstrap -->
+    <link href="{% static 'Admin/vendors/bootstrap/dist/css/bootstrap.min.css'%}" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="{% static 'Admin/vendors/font-awesome/css/font-awesome.min.css'%}" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="{% static 'Admin/vendors/nprogress/nprogress.css'%}" rel="stylesheet">
+    <!-- Animate.css -->
+    <link href="{% static 'Admin/vendors/animate.css/animate.min.css'%}" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="{% static 'Admin/build/css/custom.min.css'%}" rel="stylesheet">
+
+  </head>
+
+  <body class="login">
+  {% block content %}
+  {% endblock %}
+    <!-- jQuery -->
+    <script src="{% static 'Admin/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="{% static 'Admin/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="{% static 'Admin/vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="{% static 'Admin/vendors/nprogress/nprogress.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="{% static 'Admin/build/js/custom.min.js"></script>
+  </body>
+</html>
