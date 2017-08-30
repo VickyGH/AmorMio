@@ -1,1 +1,1 @@
-web: gunicorn AmorMio.wsgi --log-file -
+web: gunicorn amormio.wsgi --log-file -
