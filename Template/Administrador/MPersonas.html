@@ -1,0 +1,100 @@
+{% extends "baseAdmin.html" %}
+{% block title %}Lista{% endblock %}
+{% block content %}
+<div class="right_col" role="main">
+    <div class="">
+        <div class="page-title">
+            <div class="title_left">
+                <h3>Lista de Personas</h3>
+            </div>
+        </div>
+
+        <div class="title_right">
+            <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                <div class="input-group">
+                    <form action="##" method="get" class="input-group-btn">
+                        <input type="text" class="form-control" name="search" id="search" value="{{ search }}" placeholder="Buscar..">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <ul class="nav navbar-right panel_toolbox">
+                        <div class="row fontawesome-icon-list">
+                            <a href="{% url 'Admin:APersonas' %}"><i class="fa fa-pencil-square-o"></i> Agregar </a>
+                        </div>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div class="x_content">
+                    <div class="table-responsive">
+                        <table class="table table-striped jambo_table bulk_action">
+                            <thead>
+                            <tr class="headings">
+                                <th class="column-title">Num</th>
+                                <th class="column-title">Nombre</th>
+                                <th class="column-title">Apellidos</th>
+                                <th class="column-title">Alias</th>
+                                <th class="column-title">Fotografia</th>
+                                <th class="column-title">Editar</th>
+                                <th class="column-title">Eliminar</th>
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            {% for Personas in object_list %}
+                            <tr class="even pointer">
+                                <td class="a-center">{{Personas.id}}</td>
+                                <td class="a-center">{{Personas.nombre}}</td>
+                                <td class="a-center">{{Personas.apellidos}}</td>
+                                <td class="a-center">{{Personas.alias}}</td>
+                                <td class="a-center"><img src="{{Personas.foto.url}}" width="85"></td>
+                                <td class="a-center">
+                                    <a href="{% url 'Admin:EPersonas' Personas.id %}">
+                                        <i class="glyphicon glyphicon-pencil"></i>
+                                    </a></td>
+                                </td>
+                                <td class="a-center">
+                                    <a href="{% url 'Admin:ElPersonas' Personas.id %}">
+                                        <i class="fa fa-close"></i>
+                                    </a>
+                                </td>
+                                </td>
+                            </tr>
+                            {%endfor%}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                    <ul class="pagination pagination-split">
+                        {% if page_obj.has_previous %}
+                        <li>
+                            <a href="{% url 'Admin:MPersonas' %}?page={{ page_obj.previous_page_number }}">&laquo; Anterior</a>
+                        </li>
+                        {% else %}
+                        {% endif %}
+                        <li><a>  |  </a></li>
+                        {% if page_obj.has_next %}
+                        <li>
+                            <a href="{% url 'Admin:MPersonas' %}?page={{ page_obj.next_page_number }}">Proximo &raquo;</a>
+                        </li>
+                        {% else %}
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}
