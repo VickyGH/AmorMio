@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
 import os
+import dj_database_url
 
 from os.path import normpath, join
 
@@ -93,6 +94,8 @@ DATABASES = {
         "PORT": "5432",
     }
 }
+
+DATABASES['default'] =  dj_database_url.config()
 
 
 # Password validation

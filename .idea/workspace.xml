@@ -2,64 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54e09931-10fb-40b2-ba58-580c99d251df" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AmorMio/media/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Apps/Administrador/forms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Template/Administrador/Agregar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Template/Administrador/Eliminar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Template/Administrador/MPersonas.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Template/Administrador/MTags.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/calendar.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/chartjs.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/chartjs2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/contacts.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/e_commerce.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/echarts.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/fixed_footer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/fixed_sidebar.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/form_advanced.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/form_buttons.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/form_upload.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/form_validation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/form_wizards.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/general_elements.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/glyphicons.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/icons.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/inbox.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/index2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/index3.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/invoice.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/level2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/map.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/media_gallery.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/morisjs.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/other_charts.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/page_403.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/page_404.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/page_500.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/plain_page.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/pricing_tables.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/profile.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/project_detail.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/projects.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/tables.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/tables_dynamic.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/typography.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/widgets.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/production/xx.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AmorMio/settings.py" afterPath="$PROJECT_DIR$/AmorMio/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/build/css/custom.min.css" afterPath="$PROJECT_DIR$/AmorMio/static/Admin/build/css/custom.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AmorMio/static/Admin/vendors/bootstrap/less/dropdowns.less" afterPath="$PROJECT_DIR$/AmorMio/static/Admin/vendors/bootstrap/less/dropdowns.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AmorMio/urls.py" afterPath="$PROJECT_DIR$/AmorMio/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Apps/Administrador/admin.py" afterPath="$PROJECT_DIR$/Apps/Administrador/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Apps/Administrador/models.py" afterPath="$PROJECT_DIR$/Apps/Administrador/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Apps/Administrador/urls.py" afterPath="$PROJECT_DIR$/Apps/Administrador/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Apps/Administrador/views.py" afterPath="$PROJECT_DIR$/Apps/Administrador/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Template/baseAdmin.html" afterPath="$PROJECT_DIR$/Template/baseAdmin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -116,12 +59,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MTags.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MTags.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Template/Administrador/MTags.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+            <state relative-caret-position="0">
+              <caret line="0" column="30" lean-forward="true" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AmorMio/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="427">
+              <caret line="144" column="1" lean-forward="true" selection-start-line="144" selection-start-column="1" selection-end-line="144" selection-end-column="1" />
+              <folding>
+                <element signature="e#311#320#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -194,7 +149,6 @@
         <option value="$PROJECT_DIR$/Template/Administrador/AgregarPersonas.html" />
         <option value="$PROJECT_DIR$/Template/Administrador/MostrarPersonas.html" />
         <option value="$PROJECT_DIR$/Apps/Administrador/models.py" />
-        <option value="$PROJECT_DIR$/AmorMio/settings.py" />
         <option value="$PROJECT_DIR$/AmorMio/static/Admin/vendors/bootstrap/less/dropdowns.less" />
         <option value="$PROJECT_DIR$/AmorMio/static/Admin/build/css/custom.min.css" />
         <option value="$PROJECT_DIR$/Template/Administrador/eliminar.html" />
@@ -207,6 +161,7 @@
         <option value="$PROJECT_DIR$/Apps/Administrador/forms.py" />
         <option value="$PROJECT_DIR$/Template/Administrador/MTags.html" />
         <option value="$PROJECT_DIR$/Apps/Administrador/views.py" />
+        <option value="$PROJECT_DIR$/AmorMio/settings.py" />
       </list>
     </option>
   </component>
@@ -351,7 +306,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="248" y="22" width="1192" height="874" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18869565" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -359,7 +313,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936507" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23015873" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23015873" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936507" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -588,13 +542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AmorMio/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/gentelella-master/production/form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
@@ -703,9 +650,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Template/Administrador/MTags.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+        <state relative-caret-position="0">
+          <caret line="0" column="30" lean-forward="true" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AmorMio/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="144" column="1" lean-forward="true" selection-start-line="144" selection-start-column="1" selection-end-line="144" selection-end-column="1" />
+          <folding>
+            <element signature="e#311#320#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
