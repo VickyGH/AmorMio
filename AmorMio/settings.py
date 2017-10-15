@@ -83,19 +83,23 @@ WSGI_APPLICATION = 'AmorMio.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
+ON_HEROKU = os.environ.get('ON_HEROKU')
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'bd_AmorMio',
-        "USER": "VickyGH-MAC",
-        "PASSWORD": "1911vicky",
-        "HOST": "localhost",
-        "PORT": "5432",
+if ON_HEROKU:
+    DATABASES = dj_database_url.config()
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'bd_AmorMio',
+            "USER": "VickyGH-MAC",
+            "PASSWORD": "1911vicky",
+            "HOST": "localhost",
+            "PORT": "5432",
+        }
     }
-}
 
-DATABASES['default'] =  dj_database_url.config()
+
 
 
 # Password validation
