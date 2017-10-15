@@ -88,8 +88,19 @@ WSGI_APPLICATION = 'AmorMio.wsgi.application'
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
 if ON_HEROKU:
-    db_from_env = dj_database_url.config(conn_max_age=500)
-    DATABASES['default'].update(db_from_env)
+    #db_from_env = dj_database_url.config(conn_max_age=500)
+    #DATABASES['default'].update(db_from_env)
+
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'd3p0mdukom2vun',
+            "USER": "wdbrhugeeqmnqv",
+            "PASSWORD": "8495879725c06abe4e526176cae5508a542843088aa863cbd1b3f5d5a3b20cb8",
+            "HOST": "ec2-107-20-255-96.compute-1.amazonaws.com",
+            "PORT": "5432",
+        }
+    }
 else:
     DATABASES = {
         'default': {
@@ -101,6 +112,11 @@ else:
             "PORT": "5432",
         }
     }
+
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+
 
 
 # Password validation
