@@ -18,6 +18,9 @@ from os.path import normpath, join
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
+ON_HEROKU = os.environ.get('ON_HEROKU')
+HEROKU_SERVER = os.environ.get('HEROKU_SERVER')
+
 SITE_ID = 1
 
 ALLOWED_HOSTS = ['127.0.0.1', 'AmorMio.herokuapp.com']
@@ -83,7 +86,6 @@ WSGI_APPLICATION = 'AmorMio.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
-ON_HEROKU = os.environ.get('ON_HEROKU')
 
 if ON_HEROKU:
     DATABASES = dj_database_url.config()
