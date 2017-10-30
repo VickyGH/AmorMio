@@ -88,29 +88,29 @@ WSGI_APPLICATION = 'AmorMio.wsgi.application'
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 # Para subirlo Heroku
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd3p0mdukom2vun',
-        "USER": "wdbrhugeeqmnqv",
-        "PASSWORD": "8495879725c06abe4e526176cae5508a542843088aa863cbd1b3f5d5a3b20cb8",
-        "HOST": "ec2-107-20-255-96.compute-1.amazonaws.com",
-        "PORT": "5432",
-    }
-}
-
-#Para Local
-
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'bd_AmorMio',
-#         "USER": "VickyGH-MAC",
-#         "PASSWORD": "1911vicky",
-#         "HOST": "localhost",
+#         'NAME': 'd3p0mdukom2vun',
+#         "USER": "wdbrhugeeqmnqv",
+#         "PASSWORD": "8495879725c06abe4e526176cae5508a542843088aa863cbd1b3f5d5a3b20cb8",
+#         "HOST": "ec2-107-20-255-96.compute-1.amazonaws.com",
 #         "PORT": "5432",
 #     }
 # }
+
+#Para Local
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'bd_AmorMio',
+        "USER": "VickyGH-MAC",
+        "PASSWORD": "1911vicky",
+        "HOST": "localhost",
+        "PORT": "5432",
+    }
+}
 
 # Change 'default' database configuration with $DATABASE_URL.
 DATABASES['default'].update(dj_database_url.config(conn_max_age=500))

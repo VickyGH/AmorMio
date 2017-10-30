@@ -17,6 +17,14 @@ urlpatterns = [
     url(r'^ATags/$', login_required(AgregarTags), name='ATags'),
     url(r'^MTags/$', login_required(MostrarTags.as_view()), name='MTags'),
     url(r'^ETags/(?P<pk>\d+)$', login_required(EditTags.as_view()), name='ETags'),
-    url(r'^ElTags/(?P<pk>\d+)$', login_required(ElimTags.as_view()), name='ElTags')
+    url(r'^ElTags/(?P<pk>\d+)$', login_required(ElimTags.as_view()), name='ElTags'),
+# < - > - < - > - < - > - < - > - < - > - < - > - < - > - < - > - < - > - < - > - < - > - < - >
+    url(r'^AImagenes/$', login_required(AgregarImagenes), name='AImagenes'),
+    url(r'^MImagenes/$', login_required(MostrarImagenes.as_view()), name='MImagenes'),
+    url(r'^EImagenes/(?P<pk>\d+)$', login_required(EditImagenes.as_view()), name='EImagenes'),
+    url(r'^DImagenes/(?P<pk>\d+)$', login_required(DetalImagenes.as_view()), name='DImagenes'),
+    url(r'^ElImagenes/(?P<pk>\d+)$', login_required(ElimImagenes.as_view()), name='ElImagenes'),
+# < - > - < - > - < - > - < - > - < - > - < - > - < - > - < - > - < - > - < - > - < - > - < - >
+    url(r'^MImgTags/(?P<tag_id>[^/]+)/$', login_required(MostrarImgTag), name='MImgTags'),
 
 ]

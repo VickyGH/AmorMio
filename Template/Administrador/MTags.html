@@ -13,7 +13,8 @@
             <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
                 <div class="input-group">
                     <form action="##" method="get" class="input-group-btn">
-                        <input type="text" class="form-control" name="search" id="search" value="{{ search }}" placeholder="Buscar..">
+                        <input type="text" class="form-control" name="search" id="search" value="{{ search }}"
+                               placeholder="Buscar..">
                     </form>
                 </div>
             </div>
@@ -43,24 +44,31 @@
                                 <th class="column-title">Nombre</th>
                                 <th class="column-title">Editar</th>
                                 <th class="column-title">Eliminar</th>
+                                <th class="column-title"> # </th>
                             </tr>
                             </thead>
 
                             <tbody>
                             {% for Tags in object_list %}
                             <tr class="even pointer">
-                                <td class="a-center">{{Tags.id}}</td>
-                                <td class="a-center">{{Tags.nombre}}</td>
-                                <td class="a-center">
+                                <td class="a-center col-md-2">{{Tags.id}}</td>
+                                <td class="a-center col-md-2">{{Tags.nombre}}</td>
+                                <td class="a-center col-md-2">
                                     <a href="{% url 'Admin:ETags' Tags.id %}">
                                         <i class="glyphicon glyphicon-pencil"></i>
-                                    </a></td>
+                                    </a>
                                 </td>
-                                <td class="a-center">
+                                <td class="a-center col-md-2">
                                     <a href="{% url 'Admin:ElTags' Tags.id %}">
                                         <i class="fa fa-close"></i>
                                     </a>
                                 </td>
+                                <td class="a-center col-md-2">
+                                    <a href="{% url 'Admin:MImgTags' Tags.id  %}">
+                                        <button type="button" class="btn btn-success btn-xs">
+                                            <h5> Ver Imagenes </h5>
+                                        </button>
+                                    </a>
                                 </td>
                             </tr>
                             {%endfor%}
@@ -73,11 +81,12 @@
                     <ul class="pagination pagination-split">
                         {% if page_obj.has_previous %}
                         <li>
-                            <a href="{% url 'Admin:MTags' %}?page={{ page_obj.previous_page_number }}">&laquo; Anterior</a>
+                            <a href="{% url 'Admin:MTags' %}?page={{ page_obj.previous_page_number }}">&laquo;
+                                Anterior</a>
                         </li>
                         {% else %}
                         {% endif %}
-                        <li><a>  |  </a></li>
+                        <li><a> | </a></li>
                         {% if page_obj.has_next %}
                         <li>
                             <a href="{% url 'Admin:MTags' %}?page={{ page_obj.next_page_number }}">Proximo &raquo;</a>

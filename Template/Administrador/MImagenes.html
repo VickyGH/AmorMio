@@ -1,0 +1,102 @@
+{% extends "baseAdmin.html" %}
+{% block title %}Lista{% endblock %}
+{% block content %}
+<div class="right_col" role="main">
+    <div class="">
+        <div class="page-title">
+            <div class="title_left">
+                <h3>Galeria</h3>
+            </div>
+        </div>
+
+        <div class="title_right">
+            <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                <div class="input-group">
+                    {% if Dato_Img %}
+                    {% else %}
+                    <form action="##" method="get" class="input-group-btn">
+                        <input type="text" class="form-control" name="search" id="search" value="{{ search }}"
+                               placeholder="Buscar..">
+                    </form>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    {% if Dato_Img %}
+                    <h2>#{{ Dato_Img.nombre }}</h2>
+                    {% endif %}
+                    <ul class="nav navbar-right panel_toolbox">
+                        <div class="row fontawesome-icon-list">
+                            <a href="{% url 'Admin:AImagenes' %}"><i class="fa fa-pencil-square-o"></i> Agregar </a>
+                        </div>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div class="x_content">
+                    <div class="row">
+                        {% for Imagenes in object_list %}
+                        <div class="col-md-55">
+                            <div class="thumbnail">
+                                <div class="image view view-first">
+                                    <img style="width: 100%; display: block;" src="{{Imagenes.imagen.url}}"
+                                         alt="image"/>
+                                    <div class="mask">
+                                        <p>{{Imagenes.id}}</p>
+                                        <div class="tools tools-bottom">
+                                            <a href="{% url 'Admin:DImagenes' Imagenes.id %}">
+                                                <i class="fa fa-play-circle-o"></i>
+                                            </a>
+                                            <a href="{% url 'Admin:EImagenes' Imagenes.id %}">
+                                                <i class="fa fa-pencil"></i>
+                                            </a>
+                                            <a href="{% url 'Admin:ElImagenes' Imagenes.id %}">
+                                                <i class="fa fa-times"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="caption">
+                                    <p>{{Imagenes.fechaSubida}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {%endfor%}
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                    <ul class="pagination pagination-split">
+                        {% if page_obj.has_previous %}
+                        <li>
+                            <a href="{% url 'Admin:MImagenes' %}?page={{ page_obj.previous_page_number }}">
+                                &laquo;Anterior
+                            </a>
+                        </li>
+                        {% else %}
+                        {% endif %}
+                        <li><a> | </a></li>
+                        {% if page_obj.has_next %}
+                        <li>
+                            <a href="{% url 'Admin:MImagenes' %}?page={{ page_obj.next_page_number }}">
+                                Proximo&raquo;
+                            </a>
+                        </li>
+                        {% else %}
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}
